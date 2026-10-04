@@ -1,19 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:background="#F5F7FA">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ResQMesh"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#17202A" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Campus Safety System"
+                android:textSize="16sp"
+                android:textColor="#667085" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:text="EMERGENCY"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#D92D20" />
+
+            <Button
+                android:id="@+id/btnSos"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:text="SOS"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#D92D20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Press SOS when you need immediate assistance"
+                android:textSize="12sp"
+                android:textColor="#667085" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="📍  My Location"
+                    android:textSize="17sp"
+                    android:gravity="start|center_vertical"
+                    android:padding="18dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:textColor="#17202A" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="-8dp"
+                    android:text="View your current location"
+                    android:textSize="13sp"
+                    android:textColor="#667085" />
+
+                <Button
+                    android:id="@+id/btnNearby"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="📡  Nearby Devices"
+                    android:textSize="17sp"
+                    android:gravity="start|center_vertical"
+                    android:padding="18dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:textColor="#17202A" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="-8dp"
+                    android:text="Connect with nearby devices"
+                    android:textSize="13sp"
+                    android:textColor="#667085" />
+
+                <Button
+                    android:id="@+id/btnHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="📋  Emergency History"
+                    android:textSize="17sp"
+                    android:gravity="start|center_vertical"
+                    android:padding="18dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:textColor="#17202A" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="-8dp"
+                    android:text="View previous emergency alerts"
+                    android:textSize="13sp"
+                    android:textColor="#667085" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Home"
+            android:textSize="12sp"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="#D92D20" />
+
+        <Button
+            android:id="@+id/btnAlerts"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Alerts"
+            android:textSize="12sp"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="#667085" />
+
+        <Button
+            android:id="@+id/btnProfile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Profile"
+            android:textSize="12sp"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="#667085" />
+
+    </LinearLayout>
+
+</LinearLayout>
