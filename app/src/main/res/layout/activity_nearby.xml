@@ -1,0 +1,142 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B1018"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ResQMesh"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OFFLINE EMERGENCY NETWORK"
+            android:textColor="#F04452"
+            android:textSize="12sp"
+            android:letterSpacing="0.12"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="Nearby Devices"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Connect directly with nearby ResQMesh users without Internet."
+            android:textColor="#A7B0BD"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tvNearbyStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="#17212E"
+            android:padding="16dp"
+            android:text="Status: Disconnected"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/btnAdvertise"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="22dp"
+            android:text="MAKE MY DEVICE VISIBLE"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#263F57"/>
+
+        <Button
+            android:id="@+id/btnDiscover"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="12dp"
+            android:text="SEARCH NEARBY DEVICES"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#B42332"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="AVAILABLE DEVICES"
+            android:textColor="#F04452"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/deviceContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"/>
+
+        <Button
+            android:id="@+id/btnSendTestPacket"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_marginTop="24dp"
+            android:text="SEND LATEST SOS"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="#D92D20"
+            android:enabled="false"/>
+
+        <TextView
+            android:id="@+id/tvReceivedMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="#17212E"
+            android:padding="16dp"
+            android:text="Incoming emergency alerts will appear here."
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/btnStopNearby"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="22dp"
+            android:text="STOP COMMUNICATION"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#344054"/>
+
+        <Button
+            android:id="@+id/btnNearbyBack"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:text="BACK TO DASHBOARD"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#263445"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="18dp"
+            android:text="Incoming SOS records are stored locally on this device."
+            android:textColor="#98A2B3"
+            android:textSize="11sp"/>
+
+    </LinearLayout>
+</ScrollView>

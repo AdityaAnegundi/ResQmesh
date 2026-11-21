@@ -1,0 +1,129 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#0B1018">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="28dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_gravity="center_horizontal"
+            android:text="ResQMesh"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="JOIN THE SAFETY NETWORK"
+            android:textColor="#F04452"
+            android:textSize="12sp"
+            android:letterSpacing="0.15" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:text="Create Account"
+            android:textColor="#FFFFFF"
+            android:textSize="29sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Become part of a safer campus community."
+            android:textColor="#9AA4B2"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="28dp"
+            android:padding="15dp"
+            android:hint="Full name"
+            android:inputType="textPersonName"
+            android:autofillHints="name"
+            android:singleLine="true"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#8892A0"
+            android:backgroundTint="#596579" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:padding="15dp"
+            android:hint="Email address"
+            android:inputType="textEmailAddress"
+            android:autofillHints="emailAddress"
+            android:singleLine="true"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#8892A0"
+            android:backgroundTint="#596579" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:padding="15dp"
+            android:hint="Password (minimum 6 characters)"
+            android:inputType="textPassword"
+            android:autofillHints="newPassword"
+            android:singleLine="true"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#8892A0"
+            android:backgroundTint="#596579" />
+
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:padding="15dp"
+            android:hint="Confirm password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#8892A0"
+            android:backgroundTint="#596579" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="30dp"
+            android:text="CREATE ACCOUNT"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="#E53945" />
+
+        <TextView
+            android:id="@+id/tvGoToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:padding="12dp"
+            android:text="Already have an account? Sign in"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+</ScrollView>
